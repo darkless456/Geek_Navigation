@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css" />
     <!-- Bootstrap Core CSS-->
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <!-- Custom Style -->
     <link rel="stylesheet" href="./style/pixiv.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,7 +25,7 @@
 <body>
     <?php include_once('./script/get_frame.php');
     get_header('./', './'); ?>
-    <div class="jumbotron">
+    <div class="grid">
     <?php include('./script/pixiv.php') ?>
     </div>
     <?php get_footer(); ?>
@@ -53,7 +55,7 @@ var opt={
   auto_imgHeight:true,
   insert_type:1
 }
-$('.jumbotron').waterfall(opt);
+$('.grid').waterfall(opt);
 
 </script>
 
