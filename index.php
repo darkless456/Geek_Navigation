@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Geek Navigator</title>
+    <title>极客导航 - 首页</title>
     <!-- Normalize -->
     <link rel="stylesheet" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css" />
     <!-- Bootstrap -->
@@ -18,9 +18,9 @@
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <!-- Custom Style -->
-    <link rel="stylesheet/less" href="./style/index.less" />
+    <link rel="stylesheet/less" href="./style/default.less" />
 </head>
 
 <body>
@@ -36,166 +36,22 @@ get_header('./', './')?>
             </ul>
             <!-- tabs pills -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <div class="jumbotron clearfix">
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg center-block load-more">加载更多</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="jumbotron clearfix">
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg center-block load-more">加载更多</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="jumbotron clearfix">
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg center-block load-more">加载更多</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="jumbotron clearfix">
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="NEC" href="">NEC</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="优设" href="">优设</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="Bootstrap中文" href="">Bootstrap中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                            <div class="col-md-2 text-center"><a data-toggle="tooltip" data-placement="top" title="AngularJS中文" href="">AngularJS中文</a></div>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg center-block load-more">加载更多</button>
-                    </div>
-                </div>
+            <!-- <div class="grid"> -->
             </div>
         </div>
     </div>
     <?php get_footer(); ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Custom javascript -->
+    <script src="./js/site.js"></script>    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Less.js (necessary for less format style) -->
-    <script src="./js/less.min.js"></script>
+    <script src="//cdn.bootcss.com/less.js/2.6.0/less.min.js"></script>
     <!-- Blurr.js (Blurred backgound image) -->
     <script src="./js/jquery.blur.min.js"></script>
+
 </body>
 <script>
 $(document).ready(function(){
@@ -213,9 +69,5 @@ $(document).ready(function(){
         // 
         offset: { x: 15, y: -12 }
     });
-
-
 });
 </script>
-
-</html>
