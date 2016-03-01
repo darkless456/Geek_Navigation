@@ -42,7 +42,7 @@ get_header('./', './')?>
             <div class="form-group">
                 <label for="intro" class="col-sm-1 control-label">网站简介</label>
                 <div class="col-sm-8">
-                    <textarea class="form-control" rows="3" placeholder="（选填）请输入网站简介" style="resize: none;"></textarea>
+                    <textarea name="intro" class="form-control" rows="3" placeholder="（选填）请输入网站简介(请在50字以内）" style="resize: none;"></textarea>
                 </div>
             </div>
             <div class="form-group">

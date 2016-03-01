@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-02-25 17:56:49
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-02-25 22:11:26
+ * @Last Modified time: 2016-03-01 16:24:34
 */
 function get_header($path, $path2){
     
@@ -47,7 +47,7 @@ function get_header($path, $path2){
 
 function get_footer(){
     $footer = '<footer>
-        <p>Designed by Kevin Lin &copy; 2016</p>
+    <p>Designed by Kevin Lin <i>&copy;</i> 2016</p>
     </footer>';
     echo $footer;
 };
