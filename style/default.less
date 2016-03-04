@@ -1,119 +1,256 @@
-// Elements base
-
-@font-face{
-    font-family: 'FontAwesome';
-
-    src: local('FontAwesome'), url('//cdn.bootcss.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg') format('svg');
+// 测试部分样式
+@dev_color: lightpink;
+@fill_color: yellowgreen;
+.pos-module {
+    .solid_line;
+    background-color: @fill_color;
 }
 
-body{
-    font-family: 'FontAwesome', 'Helvetica Neue', Helvetica, Tahoma, Arial, STXihei, 'Microsoft YaHei', '微软雅黑', sans-serif;
+#infoModal .container-fruid{
+    // .pos-module;
+}
 
+// 全局字体
+@font-face {
+    font-family: 'FontAwesome';
+    src: local('FontAwesome'), url('//cdn.bootcss.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg') format('svg');
+    src: local('FontAwesome'), url('//cdn.bootcss.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf') format('TrueType');
+}
+
+body {
+    font-family: 'FontAwesome', 'Helvetica Neue', Helvetica, Tahoma, Arial, STXihei, 'Microsoft YaHei', '微软雅黑', sans-serif;
     background-color: transparent;
     background-image: url(../img/bg.jpg);
     background-repeat: repeat;
 }
-// public params
-.solid_line(@size){
-    margin: (0-@size);
 
-    border: @size solid #000;
+/* ------------------公共变量 -----------------*/
+// 
+// 
+@subling_margin: 10px;
+.solid_line {
+    border: 2px solid #000;
+}
+// 基本配色
+@color_blue: lighten(#337ab7, 10%);   //#4f93ce
+@color_green: lighten(#5cb85c, 5%);   //#6ec06e
+@color_yellow: #f0ad4e;               //#f0ad4e
+@color_purple: lighten(#663399, 20%); //#9966cc
+@color_red: #d9534f;                  //#d9534f
+@gradual: 20%;
+.font-inverse(@font_color: #fff) {
+    color: @font_color;
 }
 
-.box_shadow(@offset, @radius){
+.panel-blue {
+    border-color: @color_blue;
+}
+
+.panel-blue> .panel-heading {
+    .panel-blue;
+    .font-inverse;
+    background-color: @color_blue;
+}
+
+.panel-blue> a {
+    color: @color_blue;
+}
+
+.panel-blue > a:hover {
+    color: darken(@color_blue, @gradual);
+}
+
+.panel-green {
+    border-color: @color_green;
+}
+
+.panel-green> .panel-heading {
+    .panel-green;
+    .font-inverse;
+    background-color: @color_green;
+}
+
+.panel-green> a {
+    color: @color_green;
+}
+
+.panel-green> a:hover {
+    color: darken(@color_green, @gradual);
+}
+
+.panel-yellow {
+    border-color: @color_yellow;
+}
+
+.panel-yellow> .panel-heading {
+    .panel-yellow;
+    .font-inverse;
+    background-color: @color_yellow;
+}
+
+.panel-yellow> a {
+    color: @color_yellow;
+}
+
+.panel-yellow> a:hover {
+    color: darken(@color_yellow, @gradual);
+}
+
+.panel-purple {
+    border-color: @color_purple;
+}
+
+.panel-purple> .panel-heading {
+    .panel-purple;
+    .font-inverse;
+    background-color: @color_purple;
+}
+
+.panel-purple> a {
+    color: @color_purple;
+}
+
+.panel-purple> a:hover {
+    color: darken(@color_purple, @gradual);
+}
+
+.panel-red {
+    border-color: @color_red;
+}
+
+.panel-red> .panel-heading {
+    .panel-red;
+    .font-inverse;
+    background-color: @color_red;
+}
+
+.panel-red> a {
+    color: @color_red;
+}
+
+.panel-red> a:hover {
+    color: darken(@color_purple, @gradual);
+}
+
+.panel-title {
+    color: inherit;
+}
+@border_size: 1px;
+@border_color: #000;
+.solid_line(@border_size, @border_color) {
+    margin: (0-@border_size);
+    border: @border_size solid @border_color;
+}
+
+.box_shadow(@offset, @radius) {
     box-shadow: @offset @offset @radius #000;
 }
 
-.text_shadow(@offset, @radius){
+.text_shadow(@offset, @radius) {
     text-shadow: @offset @offset @radius #000;
 }
 
-@nav_active_color: #337ab7;
+@site_color: #337ab7;
 @radius: 4px;
-
-.mixin_bg(dark, @color){
+.mixin_bg(dark, @color) {
     background-color: darklen(@color, 20%);
 }
-.mixin_bg(light, @color){
+
+.mixin_bg(light, @color) {
     background-color: lighten(@color, 80%);
 }
 
-.jumbotron{
+.jumbotron {
     margin-top: 48px;
-    // background: transparent;
-
     background-image: url(../img/bgc.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
-.nav-pills li{
-    border-radius: @radius;
-    // @switch: light;
-    // @color: @nav_active_color;
-    // .mixin_bg(@switch, @color);
-    background-color: #fff;
 
+.nav-pills li {
+    border-radius: @radius;
+    background-color: #fff;
     .box_shadow(0, 2px);
-    .solid_line(1px);
+    .solid_line(1px, #000);
 }
 
-.row{
+.row {
     font-size: 1.143em;
 }
 
-.row .col-md-2{
-    .solid_line(1px);
+.row .col-md-2 {
+    .solid_line(1px, #333366);
 }
 
-.row .col-md-2 a{
-    color: lighten(#337ab7, 30%);
-
+.row .col-md-2 span {
+    font-weight: bold;
+    color: lighten(@site_color, 10%);
     .text_shadow(1px, 4px);
 }
 
-.load-more{
+.row span:hover {
+    cursor: pointer;
+    color: lighten(@site_color, 30%);
+    text-decoration: underline !important;
+}
+
+.load-more {
     .box_shadow(0, 2px);
 }
 
-// -----------------------------------------------------------------------------------
-// Element layout
+// ---------------------------------页面布局--------------------------------------
 // 
-body{
+// 
+body {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
-footer p{
-    margin-left: 45%;
+footer p {
+    margin-left: 40%;
 }
 
-// dev style
-
-@dev_color: lightpink;
-@fill_color: yellowgreen;
-
-.pos-module{
-    .solid_line;
-    background-color: @fill_color;
-}
-
-// public params
+// 正文部分样式
 // 
-@subling_margin: 10px;
-
-.solid_line{
-    border: 2px solid #000;
+@media(min-width: 960px) {
+    .col-md-2 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        // padding: 60px;
+    }
+    .load-more {
+        margin-top: @subling_margin;
+    }
 }
 
-// Part content
-// 
-
-.col-md-2{
-    padding-top: 60px;
-    padding-bottom: 60px;
+@media(max-width: 960px) {
+    .col-md-2 {
+        padding: 30px;
+    }
+    .load-more {
+        margin-top: @subling_margin/2;
+    }
 }
 
-.load-more{
+// 模态框
+//
+#infoModal .label-info, #infoModal .label-info:hover{
+    // display: inline-block !important;
+    padding: 5px 5px;
+    cursor: default;
+    color: #fff;
+}
+
+#infoModal .row{
     margin-top: @subling_margin;
+}
+
+#infoModal span:hover{
+    text-decoration: none !important;
+}
+
+span.site-url:hover, span.site-intro:hover{
+    cursor: text;
+    color: inherit;
 }

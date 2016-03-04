@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>新站提交 - 极客导航</title>
+    <title>推荐新网站 - 极客导航</title>
     <!-- Normalize -->
     <link rel="stylesheet" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css" />
     <!-- Bootstrap Core CSS-->
@@ -55,16 +55,16 @@ get_header('./', './')?>
                 <div class="col-sm-offset-1">
                     <div class="radio">
                         <label class="radio-inline">
-                            <input type="radio" name="classify" value="none" checked>无法区分
-                        </label>
-                        <label class="radio-inline">
                             <input type="radio" name="classify" value="front" >前端设计
                         </label>
                         <label class="radio-inline">
                             <input type="radio" name="classify" value="back" >后台开发
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="classify" value="other" >其他推荐
+                            <input type="radio" name="classify" value="blog" >个人博客
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="classify" value="other" checked>其他推荐
                         </label>
                     </div>
                 </div>
