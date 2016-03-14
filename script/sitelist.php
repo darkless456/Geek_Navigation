@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-03-10 12:51:26
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-14 14:44:35
+ * @Last Modified time: 2016-03-14 20:17:32
 */
 include_once('./script/conn.php');
 // include_once('./conn.php');
@@ -71,9 +71,9 @@ if(!isset($_GET['display'])){
 }
 $sites_sum = count($sites);
 echo '<caption><h3>'.$catalog.'&nbsp;<small>网站列表</small></h3></caption>';
-echo '<thead><tr><th>时间</th><th>网站</th><th>访问地址</th><th>简介</th></tr></thead><tbody id="sitelist">';
+echo '<thead><tr><th>时间</th><th>网站</th><th>访问地址</th><th>简介</th></tr></thead><tbody>';
 for($i=0;$i<$sites_sum;$i++){
-    echo '<tr><td>'.date('y/m/d', $sites[$i][4]).'</td><td class="text-autocut">'.$sites[$i][1].'</td><td><a href="'.$sites[$i][2].'">'.$sites[$i][2].'</a></td><td class="text-autocut">'.$sites[$i][3].'</td></tr>';
+    echo '<tr><td>'.date('y/m/d', $sites[$i][4]).'</td><td>'.$sites[$i][1].'</td><td><a href="'.$sites[$i][2].'">'.$sites[$i][2].'</a></td><td>'.$sites[$i][3].'</td></tr>';
 }
 
 echo '</tbody>';

@@ -27,7 +27,7 @@ get_header('./', './')?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12" id="sitelist">
-                <table class="table table-hover">
+                <table class="table table-hover" style="table-layout: fixed;">
                 <?php include('./script/sitelist.php');?>
                 </table>
             </div>

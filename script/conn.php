@@ -3,19 +3,19 @@
  * @Author: darkless
  * @Date:   2016-02-26 16:19:25
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-14 20:11:37
+ * @Last Modified time: 2016-03-14 20:15:33
 */
 // SAE MySQL
- $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
- $dbuser = SAE_MYSQL_USER;
- $dbpass = SAE_MYSQL_PASS;
- $dbname = SAE_MYSQL_DB; 
+ // $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
+ // $dbuser = SAE_MYSQL_USER;
+ // $dbpass = SAE_MYSQL_PASS;
+ // $dbname = SAE_MYSQL_DB; 
 
 // Local MySQL
- // $hostname = 'localhost'. ':'. '3306';
- // $dbuser = 'root';
- // $dbpass = '';
- // $dbname = 'navdata';
+ $hostname = 'localhost'. ':'. '3306';
+ $dbuser = 'root';
+ $dbpass = '';
+ $dbname = 'navdata';
 
  $link = new mysqli($hostname, $dbuser, $dbpass, $dbname); 
  // $link = @mysqli_connect($hostname, $dbuser, $dbpass);
