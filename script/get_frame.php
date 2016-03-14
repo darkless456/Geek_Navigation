@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-02-25 17:56:49
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-02 13:07:18
+ * @Last Modified time: 2016-03-10 17:49:33
 */
 function get_header($path, $path2){
     
@@ -23,19 +23,21 @@ function get_header($path, $path2){
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="'. $path2. '#">留言</a></li>
-                                <li><a href="'. $path2. '#">关于</a></li>
+                                <li><a href="'. $path2. 'message.php">留言</a></li>
+                                <li><a href="'. $path2. 'about.php">关于</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="'. $path2. '#">友链</a></li>
+                                <li><a href="'. $path2. 'allsite.php">已收录网站</a></li>
                             </ul>
                         </li>
-                    </ul>
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
+                    </ul>    
+                    <form action="http://www.baidu.com/baidu" target="_blank" class="navbar-form navbar-right" role="search" id="search">
+                        <div class="form-group" align="center">
+                            <input name="tn" type="hidden" value="baidu">
+                            <input type="text" name="word" class="form-control" placeholder="Search" id="word">
                         </div>
                         <button type="submit" class="btn btn-success">搜索</button>
                     </form>
+
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -46,9 +48,8 @@ function get_header($path, $path2){
 };
 
 function get_footer(){
-    $footer = '<footer>
-    <p>Copyright <i class="fa fa-copyright"></i> 2016 Designed by Kevin Lin</p>
-    </footer>';
+    $footer = '<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-3"><footer>
+    <p>Copyright <i class="fa fa-copyright"></i> 2016 Designed by Kevin Lin &nbsp;联系邮箱：loveless_456@foxmail.com</p></footer></div></div></div>';
     echo $footer;
 };
 ?>

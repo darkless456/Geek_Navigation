@@ -2,21 +2,22 @@
  * @Author: darkless
  * @Date:   2016-02-29 12:14:57
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-04 23:11:53
+ * @Last Modified time: 2016-03-10 22:01:54
  */
 (function($) {
     var el //站点全局变量
     $wrap = $('.carousel-inner');
     $.ajax({
         type: 'get',
-        url: './script/site.php',
+        url: './script/display.php',
         dataType: 'json',
+        data: {'display': 'site'},
         async: false, //关闭异步，用于给全局变量赋值
         success: function(data, status) {
             var category = ['front', 'back', 'blog', 'other'];
             $.each(data, function(index, value) {
                 var $oDiv = $('<div>').addClass('item').appendTo($wrap);
-                var $oDiv2 = $('<div>').addClass('jumbotron clearfix').attr('id', category[index]).appendTo($oDiv);
+                var $oDiv2 = $('<div>').addClass('jumbotron clearfix').attr('id', 'index-'+category[index]).appendTo($oDiv);
                 for(var i = 0; i < 4; i++) {
                     var $oDiv3 = $('<div>').addClass('row').appendTo($oDiv2);
                     for(var j = 0; j < 6; j++) {
@@ -36,7 +37,7 @@
                 }
                 var $oButton = $('<button>').addClass('btn btn-primary btn-lg center-block load-more').attr({
                     'type': 'button',
-                    'name': index
+                    'data-serial': index
                 }).html('加载更多').appendTo($oDiv2);
             })
             $('.item:first').addClass('active');
@@ -45,10 +46,10 @@
     })
     $(el).on({
         mouseenter: function() {
-            $(this).addClass('bounce animated');
+            $(this).addClass('rubberBand animated');
         },
         mouseleave: function() {
-            $(this).removeClass('bounce animated')
+            $(this).removeClass('rubberBand animated')
         }
     })
 
@@ -82,7 +83,7 @@
         var timer = setTimeout(function() {
             $.ajax({
                 type: 'post',
-                url: './script/update.php',
+                url: './script/handle.php',
                 dataType: 'json',
                 data: {
                     'category': $('#site-category').attr('data-category'),
@@ -92,6 +93,13 @@
             })
         }, 100);
     })
-    console.log($('.site-title'));
+    
+    $('.load-more').on({
+        click: function(e){
+            e.preventDefault();
+            var data_serial = $(this).attr('data-serial');
+            window.open('./allsite.php?display='+data_serial);
+        }
+    })
 })(jQuery);
 

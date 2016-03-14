@@ -35,6 +35,7 @@
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Custom JS Code -->
     <script src="./js/app.js"></script>
+    <script src="./js/default.js"></script>
 </body>
 <script>
 var opt={

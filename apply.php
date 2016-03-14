@@ -88,5 +88,6 @@ get_header('./', './')?>
     <script src="//cdn.bootcss.com/less.js/2.6.0/less.min.js"></script>
     <!-- Custom js -->
     <script src="./js/apply.js"></script>
+    <script src="./js/default.js"></script>
   </body>
 </html>

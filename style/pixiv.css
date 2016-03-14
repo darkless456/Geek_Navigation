@@ -48,7 +48,3 @@ body {
     overflow: hidden;
     width: expression(document.body.clientWidth>190?"190px": "auto");
 }
-
-footer {
-    margin-left: 45%;
-}

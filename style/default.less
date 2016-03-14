@@ -6,7 +6,7 @@
     background-color: @fill_color;
 }
 
-#infoModal .container-fruid{
+#infoModal .container-fruid {
     // .pos-module;
 }
 
@@ -24,19 +24,22 @@ body {
     background-repeat: repeat;
 }
 
+
 /* ------------------公共变量 -----------------*/
+
 // 
 // 
 @subling_margin: 10px;
 .solid_line {
     border: 2px solid #000;
 }
+
 // 基本配色
-@color_blue: lighten(#337ab7, 10%);   //#4f93ce
-@color_green: lighten(#5cb85c, 5%);   //#6ec06e
-@color_yellow: #f0ad4e;               //#f0ad4e
+@color_blue: lighten(#337ab7, 10%); //#4f93ce
+@color_green: lighten(#5cb85c, 5%); //#6ec06e
+@color_yellow: #f0ad4e; //#f0ad4e
 @color_purple: lighten(#663399, 20%); //#9966cc
-@color_red: #d9534f;                  //#d9534f
+@color_red: #d9534f; //#d9534f
 @gradual: 20%;
 .font-inverse(@font_color: #fff) {
     color: @font_color;
@@ -135,6 +138,7 @@ body {
 .panel-title {
     color: inherit;
 }
+
 @border_size: 1px;
 @border_color: #000;
 .solid_line(@border_size, @border_color) {
@@ -142,15 +146,34 @@ body {
     border: @border_size solid @border_color;
 }
 
-.box_shadow(@offset, @radius) {
+.ele_shadow(@offset, @radius) {
     box-shadow: @offset @offset @radius #000;
 }
 
-.text_shadow(@offset, @radius) {
-    text-shadow: @offset @offset @radius #000;
+//超出文字省略号
+.text-autocut{
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-text-overflow:ellipsis;
+    -khtml-text-overflow: ellipsis; 
+    -icab-text-overflow: ellipsis; 
+    -moz-text-overflow: ellipsis; 
+    -o-text-overflow: ellipsis; 
+    text-overflow: ellipsis; 
 }
 
-@site_color: #337ab7;
+//渐变类
+.gradient(@origin: top, @startColor, @endColor) {
+    background-color: @startColor/2 + @endColor/2;
+    filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{startColor}', endColorstr='@{endColor}')";
+    background-image: -webkit-linear-gradient(@origin, @startColor, @endColor);
+    background-image: -moz-linear-gradient(@origin, @startColor, @endColor);
+    background-image: -o-linear-gradient(@origin, @startColor, @endColor);
+    background-image: -ms-linear-gradient(@origin, @startColor, @endColor);
+    background-image: linear-gradient(@origin, @startColor, @endColor);
+}
+
+@site_color: #D1D3D4;
 @radius: 4px;
 .mixin_bg(dark, @color) {
     background-color: darklen(@color, 20%);
@@ -162,16 +185,32 @@ body {
 
 .jumbotron {
     margin-top: 48px;
-    background-image: url(../img/bgc.jpg);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
 
+#index-front {
+    background-image: url(../img/bgc-front.jpg);
+}
+
+#index-back {
+    background-image: url(../img/bgc-back.jpg);
+}
+
+#index-blog {
+    background-image: url(../img/bgc-blog.jpg);
+}
+
+#index-other {
+    background-image: url(../img/bgc-other.jpg);
+}
+
 .nav-pills li {
     border-radius: @radius;
     background-color: #fff;
-    .box_shadow(0, 2px);
+    .ele_shadow(0, 2px);
     .solid_line(1px, #000);
 }
 
@@ -186,7 +225,8 @@ body {
 .row .col-md-2 span {
     font-weight: bold;
     color: lighten(@site_color, 10%);
-    .text_shadow(1px, 4px);
+    // text-shadow: 1px 1px 5px @color_blue;
+    .text-autocut;
 }
 
 .row span:hover {
@@ -196,7 +236,7 @@ body {
 }
 
 .load-more {
-    .box_shadow(0, 2px);
+    .ele_shadow(0, 2px);
 }
 
 // ---------------------------------页面布局--------------------------------------
@@ -205,10 +245,6 @@ body {
 body {
     padding-top: 100px;
     padding-bottom: 20px;
-}
-
-footer p {
-    margin-left: 40%;
 }
 
 // 正文部分样式
@@ -235,22 +271,42 @@ footer p {
 
 // 模态框
 //
-#infoModal .label-info, #infoModal .label-info:hover{
+#infoModal .label-info, #infoModal .label-info:hover {
     // display: inline-block !important;
     padding: 5px 5px;
     cursor: default;
     color: #fff;
 }
 
-#infoModal .row{
+#infoModal .row {
     margin-top: @subling_margin;
 }
 
-#infoModal span:hover{
+#infoModal span:hover {
     text-decoration: none !important;
 }
 
-span.site-url:hover, span.site-intro:hover{
+span.site-url:hover, span.site-intro:hover {
     cursor: text;
     color: inherit;
+}
+
+// 留言显示部分
+//
+#display .col-lg-9{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.msg-text{
+    color: @color_blue;
+}
+
+#sitelist{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: @subling_margin;
 }

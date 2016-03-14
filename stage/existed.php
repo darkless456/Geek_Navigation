@@ -1,10 +1,11 @@
-<?php
-/*
- * @Author: darkless
- * @Date:   2016-03-03 09:50:18
- * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-03 10:24:42
-*/
-echo "existed";
-
-?>
+<div class="container-fruid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header"><i class="fa fa-database"></i> 已收录<small> 已有的网站</small></h2>
+            <ol class="breadcrumb">
+                <li ><i class="fa fa-dashboard"></i> 概况</li>
+                <li class="active"><i class="fa fa-database"></i> 已收录</li>
+            </ol>
+        </div>
+    </div>
+</div>

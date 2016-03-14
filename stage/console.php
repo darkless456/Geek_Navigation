@@ -52,9 +52,9 @@
         <div class="container-fruid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="page-header">概况<small> 浏览网站整体状况</small></h2>
+                    <h2 class="page-header"><i class="fa fa-dashboard"></i> 概况<small> 浏览网站整体状况</small></h2>
                     <ol class="breadcrumb">
-                        <li class="active">概况</li>
+                        <li class="active"><i class="fa fa-dashboard"></i> 概况</li>
                     </ol>
                 </div>
             </div>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-chart-pie"  style="width: 550px; height: 400px;"></div>
+                                <div class="flot-chart-content" id="flot-chart-pie"></div>
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div id="chart-tooltips" style="height: 25px;"></div>
@@ -192,6 +192,8 @@
         </div>
     </div>
 
+<?php include_once('../script/get_frame.php');
+get_footer(); ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

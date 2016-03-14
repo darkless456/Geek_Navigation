@@ -98,6 +98,7 @@ get_header('./', './')?>
     <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
     <!-- Custom javascript -->
     <script src="./js/site.js"></script>    
+    <script src="./js/default.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Less.js (necessary for less format style) -->
