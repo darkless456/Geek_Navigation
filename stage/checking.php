@@ -9,16 +9,16 @@
         </div>
     </div>
     <div class="row center-block">
-        <div class="col-lg-12 waiting">
-            <table class="table table-hover">
+        <div class="col-lg-12 col-md-12 waiting">
+            <table class="table table-hover" style="table-layout:fixed">
                 <caption><i class="fa fa-list"></i> 正在等待审核列表</caption>
                 <thead>
                     <tr>
+                        <th>时间</th>
                         <th>网站名称</th>
                         <th>URL</th>
                         <th>简介</th>
                         <th>联系邮箱</th>
-                        <th>时间</th>
                         <th>分类</th>
                     </tr>
                 </thead>
@@ -28,17 +28,20 @@
             </table>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-12"></div>
+    </div>
     <div class="row center-block">
-        <div class="col-lg-12 outofcheck">
-            <table class="table table-hover">
+        <div class="col-lg-12 col-md-12 outofcheck">
+            <table class="table table-hover" style="table-layout:fixed">
                 <caption><i class="fa fa-ban"></i> 审核未通过列表</caption>
                 <thead>
                     <tr>
+                        <th>时间</th>
                         <th>网站名称</th>
                         <th>URL</th>
                         <th>简介</th>
                         <th>联系邮箱</th>
-                        <th>时间</th>
                         <th>分类</th>
                         <th>原因</th>
                     </tr>
@@ -61,7 +64,7 @@
             <div class="modal-body">
                 <div class="container-fruid">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 col-md-12">
                             <textarea id="conclusion" name="conclusion" rows="9" style="width: 100%; border: 1px solid #ccc; border-radius: 4px; resize: none;"></textarea>
                         </div>
                     </div>

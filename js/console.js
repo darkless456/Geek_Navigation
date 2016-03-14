@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2016-03-02 14:47:42
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-13 23:43:31
+ * @Last Modified time: 2016-03-14 19:50:51
  */
 
 $(document).ready(function() {
@@ -104,12 +104,22 @@ function outputChecking(){
             $('<td>').text(value['uptime']).appendTo($tr);
             $('<td>').text(value['site']).appendTo($tr);
             $('<td>').text(value['url']).appendTo($tr);
-            $('<td>').addClass('text-autocut').text(value['intro']).appendTo($tr);
+            $('<td>').text(value['intro']).appendTo($tr);
             $('<td>').text(value['email']).appendTo($tr);
-            $('<td>').text(categorys[value['classify']]).appendTo($tr);
-            var $btn1 = $('<td>').addClass('btn btn-success').attr({'data-judge':'1'}).html('<i class="fa fa-check-circle"></i>通过').appendTo($tr);
-            var $btn2 = $('<td>').addClass('btn btn-danger').attr({'data-judge':'0', 'data-toggle': 'modal', 'data-target': '#reasonModal'}).html('<i class="fa fa-ban"></i>不通过').appendTo($tr);
-            var $btn3 = $('<td>').addClass('btn btn-info').attr({'data-toggle': 'modal', 'data-target': '#reasonModal'}).html('<i class="fa fa-angle-double-right"></i>详细').appendTo($tr);                       
+            $('<td>').text(categorys[value['classify']]).appendTo($tr); 
+            //审核按钮
+            var $btn_group = $('<div>').addClass('btn-group').appendTo($tr);
+            // var $default_btn = $('<button>').addClass('btn btn-info').html('详情').appendTo($btn_group);
+            var $btn_dropdown = $('<button>').addClass('btn btn-primary dropdown-toggle').attr({'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false'}).html('审核').appendTo($btn_group);
+            $('<span>').addClass('caret').appendTo($btn_dropdown);
+            $('<span>').addClass('sr-only').html('Toggle Dropdown').appendTo($btn_dropdown);
+            var $btn_ul = $('<ul>').addClass('dropdown-menu').appendTo($btn_group);
+            var $li_0 = $('<li>').appendTo($btn_ul);
+            $('<a>').attr('href', '2').html('<i class="fa fa-archive"></i>详情').appendTo($li_0);
+            var $li_1 = $('<li>').appendTo($btn_ul);
+            $('<a>').attr('href', '1').html('<i class="fa fa-check"></i>通过').appendTo($li_1);
+            var $li_2 = $('<li>').appendTo($btn_ul);
+            $('<a>').attr('href', '0').html('<i class="fa fa-ban"></i>不通过').appendTo($li_2);  
         });
         checkingBtn();
     })
@@ -123,11 +133,12 @@ function outofCheck(){
             $('<td>').text(value['uptime']).appendTo($tr);
             $('<td>').text(value['site']).appendTo($tr);
             $('<td>').text(value['url']).appendTo($tr);
-            $('<td>').addClass('text-autocut').text(value['intro']).appendTo($tr);
+            $('<td>').text(value['intro']).appendTo($tr);
             $('<td>').text(value['email']).appendTo($tr);
             $('<td>').text(categorys[value['classify']]).appendTo($tr);
             $('<td>').text(value['conclusion']).appendTo($tr);
-            $('<td>').addClass('btn btn-info').html('<i class="fa fa-angle-double-right"></i>详细').appendTo($tr);                       
+            var $btn1 = $('<button>').addClass('btn btn-info').appendTo($tr);
+            $('<a>').attr('href', '2').css({'color':'#fff','text-decoration':'none'}).html('<i class="fa fa-angle-double-right"></i>详细').appendTo($btn1);                      
         });
         checkingBtn();
     })
@@ -137,15 +148,38 @@ function outofCheck(){
 function checkingBtn(){
     $('.btn-success').on({
         'click': function(){
+            var that = $(this);
             var judge = $(this).attr('data-judge');
             var id = $(this).parent('tr').attr('id');
             var classify = $(this).parent('tr').attr('class');
-            // $.post('../script/handle.php', {'judge': judge, 'id': id, 'classify': classify}, function(data){
-            //     console.log(data);
-            // })
+            $.post('../script/handle.php', {'judge': judge, 'id': id, 'classify': classify}, function(){
+                that.parent('tr').empty();
+            })
         }
     });
+
+    // $('.btn-danger').on({
+    //     'click': function(){
+    //         var that = $(this);
+    //         var 
+    //     }
+    // })
 }
+
+function addDropdown(element, action, menu1, menu2){
+    var $btn_group = $('<div>').addClass('btn-group').appendTo(element);
+    var $default_btn = $('<button>').addClass('btn btn-info').appendTo($btn_group);
+    $('<a>').attr('href', action['src']).html(action['text']).appendTo($default_btn);
+    var $btn_dropdown = $('<button>').addClass('btn btn-danger dropdown-toggle').attr({'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false'}).appendTo($btn_group);
+    // $('<span>').addClass('caret').appendTo($btn_dropdown);
+    // $('<span>').addClass('sr-only').html('Toggle Dropdown').appendTo($btn_dropdown);
+    var $btn_ul = $('<ul>').addClass('dropdown-menu').appendTo($btn_group);
+    var $li_1 = $('<li>').appendTo($btn_ul);
+    $('<a>').attr('href', menu1['src']).html(menu1['text']).appendTo($li_1);
+    var $li_2 = $('<li>').appendTo($btn_ul);
+    $('<a>').attr('href', menu2['src']).html(menu2['text']).appendTo($li_2);    
+}
+
 
 })
 
