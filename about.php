@@ -24,7 +24,30 @@
   <body>
 <?php include_once('./script/get_frame.php'); 
 get_header('./', './')?>
-    <h1>关于我们</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2" style="margin-bottom: 20px; padding: 30px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px;">
+                <h3>关于极客导航</h3>
+                <h4>使用的开发工具</h4>
+                <p>1、Boostrap3.35（基本框架）</p>
+                <p>2、jQuery2.20（自定义JS功能）</p>
+                <p>3、LESS（自定义CSS样式）</p>
+                <p>4、Animation.css（动态效果）</p>
+                <p>5、jQuery.blur（主页导航图片模糊）</p>
+                <p>6、jQuery.flot（绘制统计图表）</p>
+                <p>7、PHP Email类（邮件自动发送）</p>
+                <p>8、Font-awesome（矢量图表和字体）</p>
+
+                <h4>网站特色</h4>
+                <p>1、主页导航点击弹出详情（模态框）</p>
+                <p>2、主页导航鼠标滑过文字变形特效</p>
+                <p>3、Pixiv图片墙（瀑布流展示）</p>
+                <p>4、响应式页面布局，兼容大小屏幕</p>
+                <p>5、审核结果通过邮件通知</p>
+                网站代码存放在<a target="_blank" href="https://github.com/darkless456/Geek_Navigation">Github Repo</a>, 欢迎交流。</p>
+            </div>
+        </div>
+    </div>
 <?php get_footer(); ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
