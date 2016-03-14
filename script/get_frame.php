@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-02-25 17:56:49
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-10 17:49:33
+ * @Last Modified time: 2016-03-14 22:34:23
 */
 function get_header($path, $path2){
     
@@ -12,7 +12,7 @@ function get_header($path, $path2){
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="javascript:">极客导航</a>
+                    <a class="navbar-brand" href="'. $path. 'index.php">极客导航</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
