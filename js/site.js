@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2016-02-29 12:14:57
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-10 22:01:54
+ * @Last Modified time: 2016-03-15 23:22:21
  */
 (function($) {
     var el //站点全局变量
@@ -78,7 +78,7 @@
 
     var timer;
     $('.site-visit').eq(0).unbind('click').click(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         clearTimeout(timer);
         var timer = setTimeout(function() {
             $.ajax({

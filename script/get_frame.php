@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-02-25 17:56:49
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-14 22:34:23
+ * @Last Modified time: 2016-03-15 23:20:01
 */
 function get_header($path, $path2){
     
@@ -49,7 +49,7 @@ function get_header($path, $path2){
 
 function get_footer(){
     $footer = '<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-3"><footer>
-    <p>Copyright <i class="fa fa-copyright"></i> 2016 Designed by Kevin Lin &nbsp;联系邮箱：loveless_456@foxmail.com</p></footer></div></div></div>';
+    <p><i class="fa fa-copyright"></i> 2016 Designed by Kevin Lin, E-MAIL:loveless_456@foxmail.com</p></footer></div></div></div>';
     echo $footer;
 };
 ?>
