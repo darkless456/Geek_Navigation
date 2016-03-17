@@ -1,4 +1,4 @@
-# 极客导航
+# [极客导航](http://geeknav.applinzi.com/index.php)
 
 ####16.03.14 更新
 * 完成审核网友提交功能，并将结果通过邮件告知
@@ -47,9 +47,19 @@
 * 轮播切换不同分类的网站，实现无缝切换，提升用户体验
 * 根据网站的点击数排名，将点击量大的网站排名靠前，提高导航效率
 * 背景图片模糊化处理，避免因图片造成字体显示不清，增强页面显示效果
+![首页截图](http://img.hoop8.com/attachments/1603/7503030984498.png)
 
 ####Pixiv图片墙
 * 从Pixiv网站抓取TOP50的图片，并以瀑布流形式显示
 * 后续会抓取Pixiv网站其他的图片或者其他网站图片，以丰富图片的内容
+![图片墙](http://img.hoop8.com/attachments/1603/0463030984498.jpg)
+
+####已收录站点列表
+![ALL SITE](http://img.hoop8.com/attachments/1603/9573030984498.png)
+![SITE](http://img.hoop8.com/attachments/1603/1283030984498.png)
+
+
+####控制台截图
+![CONSOLE](http://img.hoop8.com/attachments/1603/0963030984498.png)
 
 联系邮箱： narcissu456@gmail.com 或 loveless_456@foxmail.com
