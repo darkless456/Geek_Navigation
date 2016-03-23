@@ -1,0 +1,214 @@
+.pos-module {
+  border: 2px solid #000;
+  background-color: yellowgreen;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: local('FontAwesome'), url('//cdn.bootcss.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg') format('svg');
+  src: local('FontAwesome'), url('//cdn.bootcss.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf') format('TrueType');
+}
+body {
+  font-family: 'FontAwesome', 'Helvetica Neue', Helvetica, Tahoma, Arial, STXihei, 'Microsoft YaHei', '微软雅黑', sans-serif;
+  background-color: transparent;
+  background-image: url(../img/bg.jpg);
+  background-repeat: repeat;
+}
+/* ------------------公共变量 -----------------*/
+.solid_line {
+  border: 2px solid #000;
+}
+.panel-blue {
+  border-color: #4f93ce;
+}
+.panel-blue > .panel-heading {
+  border-color: #4f93ce;
+  color: #fff;
+  background-color: #4f93ce;
+}
+.panel-blue > a {
+  color: #4f93ce;
+}
+.panel-blue > a:hover {
+  color: #285f8f;
+}
+.panel-green {
+  border-color: #6ec06e;
+}
+.panel-green > .panel-heading {
+  border-color: #6ec06e;
+  color: #fff;
+  background-color: #6ec06e;
+}
+.panel-green > a {
+  color: #6ec06e;
+}
+.panel-green > a:hover {
+  color: #3d8b3d;
+}
+.panel-yellow {
+  border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+  border-color: #f0ad4e;
+  color: #fff;
+  background-color: #f0ad4e;
+}
+.panel-yellow > a {
+  color: #f0ad4e;
+}
+.panel-yellow > a:hover {
+  color: #c77c11;
+}
+.panel-purple {
+  border-color: #9966cc;
+}
+.panel-purple > .panel-heading {
+  border-color: #9966cc;
+  color: #fff;
+  background-color: #9966cc;
+}
+.panel-purple > a {
+  color: #9966cc;
+}
+.panel-purple > a:hover {
+  color: #663399;
+}
+.panel-red {
+  border-color: #d9534f;
+}
+.panel-red > .panel-heading {
+  border-color: #d9534f;
+  color: #fff;
+  background-color: #d9534f;
+}
+.panel-red > a {
+  color: #d9534f;
+}
+.panel-red > a:hover {
+  color: #663399;
+}
+.panel-title {
+  color: inherit;
+}
+.text-autocut {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-text-overflow: ellipsis;
+  -khtml-text-overflow: ellipsis;
+  -icab-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.jumbotron {
+  margin-top: 48px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#index-front {
+  background-image: url(../img/bgc-front.jpg);
+}
+#index-back {
+  background-image: url(../img/bgc-back.jpg);
+}
+#index-blog {
+  background-image: url(../img/bgc-blog.jpg);
+}
+#index-other {
+  background-image: url(../img/bgc-other.jpg);
+}
+.nav-pills li {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 2px #000;
+  margin: -1px;
+  border: 1px solid #000;
+}
+.row {
+  font-size: 1.143em;
+}
+.row .col-md-2 span {
+  font-weight: bold;
+  color: #ebeced;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-text-overflow: ellipsis;
+  -khtml-text-overflow: ellipsis;
+  -icab-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.row span:hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: underline !important;
+}
+.load-more {
+  box-shadow: 0 0 2px #000;
+}
+body {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+@media (min-width: 960px) {
+  .col-md-2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .load-more {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 960px) {
+  .col-md-2 {
+    padding: 30px;
+  }
+  .load-more {
+    margin-top: 5px;
+  }
+}
+#infoModal .label-info,
+#infoModal .label-info:hover {
+  padding: 5px 5px;
+  cursor: default;
+  color: #fff;
+}
+#infoModal .row {
+  margin-top: 10px;
+}
+#infoModal span:hover {
+  text-decoration: none !important;
+}
+span.site-url:hover,
+span.site-intro:hover {
+  cursor: text;
+  color: inherit;
+}
+#display .col-lg-9 {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 30px;
+}
+.msg-text {
+  color: #4f93ce;
+}
+#sitelist {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+#sitelist td {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-text-overflow: ellipsis;
+  -khtml-text-overflow: ellipsis;
+  -icab-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
