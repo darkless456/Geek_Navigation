@@ -1,1 +1,2 @@
 !function(o){o("#word").keydown(function(){o(this).css("background-color","#fff")}),o("#search button").on({click:function(c){return""==o("#word").val()?(o("#word").focus().css("background-color","#FAEBCC"),!1):($tmp=o("#word").val(),void o("#word").val($tmp+" site:geeknav.applinzi.com"))},focusout:function(c){o("#word").val("").css("background-color","#fff")}})}(jQuery);
+//# sourceMappingURL=default.js.map
