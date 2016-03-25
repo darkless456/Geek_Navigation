@@ -1,4 +1,4 @@
-# [极客导航](http://geeknav.applinzi.com/index.php)
+# [极客导航](http://geeknavigation.ga/)
 
 ####16.03.23 更新
 * 重新部署文件并用gulp打包压缩

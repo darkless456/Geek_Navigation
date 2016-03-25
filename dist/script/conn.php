@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-02-26 16:19:25
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-03-17 12:01:34
+ * @Last Modified time: 2016-03-24 16:10:37
 */
 // SAE MySQL
  // $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
@@ -11,11 +11,17 @@
  // $dbpass = SAE_MYSQL_PASS;
  // $dbname = SAE_MYSQL_DB; 
 
-// Local MySQL
+ // Weixian MySQL
  $hostname = 'localhost'. ':'. '3306';
- $dbuser = 'root';
- $dbpass = '';
- $dbname = 'navdata';
+ $dbuser = 'iznbbfpp_nav';
+ $dbpass = 'qSU23$t3';
+ $dbname = 'iznbbfpp_navdata';
+
+// Local MySQL
+// $hostname = 'localhost'. ':'. '3306';
+// $dbuser = 'root';
+// $dbpass = '';
+// $dbname = 'navdata';
 
  $link = new mysqli($hostname, $dbuser, $dbpass, $dbname); 
  // $link = @mysqli_connect($hostname, $dbuser, $dbpass);
